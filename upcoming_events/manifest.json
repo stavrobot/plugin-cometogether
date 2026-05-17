@@ -1,0 +1,15 @@
+{
+  "name": "upcoming_events",
+  "description": "Fetch upcoming events from cometogether.live for a given location.",
+  "entrypoint": "run.py",
+  "parameters": {
+    "latitude": {
+      "type": "number",
+      "description": "Latitude for the location search."
+    },
+    "longitude": {
+      "type": "number",
+      "description": "Longitude for the location search."
+    }
+  }
+}
