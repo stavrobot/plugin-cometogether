@@ -5,15 +5,14 @@
 
 import json
 import sys
+from pathlib import Path
 
 import requests
 
 
 def main() -> None:
-    params = json.load(sys.stdin)
-
-    location = params.get("location", "40.6400629,22.9444191")
-    latitude, longitude = location.split(",")
+    config = json.loads(Path("../config.json").read_text())
+    latitude, longitude = config["location"].split(",")
 
     response = requests.get(
         "https://cometogether.live/ssr/event/upcoming",

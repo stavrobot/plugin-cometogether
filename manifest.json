@@ -1,4 +1,11 @@
 {
   "name": "cometogether",
-  "description": "Fetch upcoming events from cometogether.live."
+  "description": "Fetch upcoming events from cometogether.live.",
+  "config": {
+    "location": {
+      "description": "Location to search for events, as 'latitude,longitude'.",
+      "required": false,
+      "default": "40.6400629,22.9444191"
+    }
+  }
 }
