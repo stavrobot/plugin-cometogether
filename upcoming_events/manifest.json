@@ -3,13 +3,9 @@
   "description": "Fetch upcoming events from cometogether.live for a given location.",
   "entrypoint": "run.py",
   "parameters": {
-    "latitude": {
-      "type": "number",
-      "description": "Latitude for the location search."
-    },
-    "longitude": {
-      "type": "number",
-      "description": "Longitude for the location search."
+    "location": {
+      "type": "string",
+      "description": "Location as 'latitude,longitude' (e.g. '40.6400629,22.9444191'). Defaults to Thessaloniki, Greece."
     }
   }
 }

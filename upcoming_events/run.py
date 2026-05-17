@@ -12,8 +12,8 @@ import requests
 def main() -> None:
     params = json.load(sys.stdin)
 
-    latitude = params.get("latitude", 40.6400629)
-    longitude = params.get("longitude", 22.9444191)
+    location = params.get("location", "40.6400629,22.9444191")
+    latitude, longitude = location.split(",")
 
     response = requests.get(
         "https://cometogether.live/ssr/event/upcoming",
