@@ -6,6 +6,11 @@
       "description": "Location to search for events, as 'latitude,longitude'.",
       "required": false,
       "default": "40.6400629,22.9444191"
+    },
+    "radius_km": {
+      "description": "Search radius in kilometers.",
+      "required": false,
+      "default": 50
     }
   }
 }
