@@ -1,6 +1,7 @@
 {
   "name": "cometogether",
   "description": "Fetch upcoming events from cometogether.live.",
+  "summary": "List upcoming events from cometogether.live",
   "config": {
     "location": {
       "description": "Location to search for events, as 'latitude,longitude'.",
